@@ -1,0 +1,47 @@
+2025-01-20T19:54:14Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-01-20T19:54:14Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-01-20T19:54:24Z INF +--------------------------------------------------------------------------------------------+
+2025-01-20T19:54:24Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-01-20T19:54:24Z INF |  https://burning-lawyer-minimize-measurement.trycloudflare.com                             |
+2025-01-20T19:54:24Z INF +--------------------------------------------------------------------------------------------+
+2025-01-20T19:54:24Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2025-01-20T19:54:24Z INF Version 2025.1.0 (Checksum 8734f79dbdcb91e305fa48d837840c8c0d14f143ed390c516b86c2c292d9b368)
+2025-01-20T19:54:24Z INF GOOS: linux, GOVersion: go1.22.5, GoArch: amd64
+2025-01-20T19:54:24Z INF Settings: map[edge-ip-version:4 ha-connections:1 no-autoupdate:true p:http2 protocol:http2 url:http://127.0.0.1:10000]
+2025-01-20T19:54:24Z INF Generated Connector ID: 28a06105-3114-415e-a2f9-8724dfbd0dd5
+2025-01-20T19:54:24Z INF Initial protocol http2
+2025-01-20T19:54:24Z INF ICMP proxy will use 172.16.0.2 as source for IPv4
+2025-01-20T19:54:24Z INF ICMP proxy will use 2606:4700:110:83f5:767d:125b:5b8e:c95 in zone wgcf as source for IPv6
+2025-01-20T19:54:24Z WRN The user running cloudflared process has a GID (group ID) that is not within ping_group_range. You might need to add that user to a group within that range, or instead update the range to encompass a group the user is already in by modifying /proc/sys/net/ipv4/ping_group_range. Otherwise cloudflared will not be able to ping this network error="Group ID 0 is not between ping group 65534 to 65534"
+2025-01-20T19:54:24Z WRN ICMP proxy feature is disabled error="cannot create ICMPv4 proxy: Group ID 0 is not between ping group 65534 to 65534 nor ICMPv6 proxy: socket: permission denied"
+2025-01-20T19:54:24Z INF ICMP proxy will use 172.16.0.2 as source for IPv4
+2025-01-20T19:54:24Z INF ICMP proxy will use 2606:4700:110:83f5:767d:125b:5b8e:c95 in zone wgcf as source for IPv6
+2025-01-20T19:54:24Z INF Starting metrics server on 127.0.0.1:20242/metrics
+2025-01-20T19:54:44Z ERR Unable to establish connection with Cloudflare edge error="TLS handshake with edge error: read tcp 172.16.0.2:53492->198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2025-01-20T19:54:44Z ERR Serve tunnel error error="TLS handshake with edge error: read tcp 172.16.0.2:53492->198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2025-01-20T19:54:44Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.33
+2025-01-20T19:54:45Z INF Registered tunnel connection connIndex=0 connection=84aa74e6-68ad-4210-a7a0-c43acc5f4002 event=0 ip=198.41.192.167 location=fra03 protocol=http2
+2025-01-21T02:06:34Z INF Lost connection with the edge connIndex=0
+2025-01-21T02:06:34Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.167
+2025-01-21T02:06:34Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.167
+2025-01-21T02:06:34Z ERR failed to serve incoming request error="Error shutting down control stream: client disconnected"
+2025-01-21T02:06:35Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2025-01-21T02:06:51Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.167:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.167
+2025-01-21T02:06:51Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.167:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.167
+2025-01-21T02:06:51Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.167
+2025-01-21T02:06:51Z ERR Connection terminated error="DialContext error: dial tcp 198.41.192.167:7844: i/o timeout" connIndex=0
+2025-01-21T02:07:33Z ERR Unable to establish connection with Cloudflare edge error="TLS handshake with edge error: read tcp 172.16.0.2:60998->198.41.200.13:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.13
+2025-01-21T02:07:33Z ERR Serve tunnel error error="TLS handshake with edge error: read tcp 172.16.0.2:60998->198.41.200.13:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.13
+2025-01-21T02:07:33Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.13
+2025-01-21T02:07:37Z ERR Connection terminated error="TLS handshake with edge error: read tcp 172.16.0.2:60998->198.41.200.13:7844: i/o timeout" connIndex=0
+2025-01-21T02:07:49Z INF Registered tunnel connection connIndex=0 connection=d627ef9f-03a8-4004-82f6-965a5a06809d event=0 ip=198.41.192.57 location=fra03 protocol=http2
+2025-01-21T05:43:12Z INF Lost connection with the edge connIndex=0
+2025-01-21T05:43:12Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.57
+2025-01-21T05:43:12Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.57
+2025-01-21T05:43:12Z ERR failed to serve incoming request error="Error shutting down control stream: context canceled"
+2025-01-21T05:43:12Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2025-01-21T05:43:42Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2025-01-21T05:43:42Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2025-01-21T05:43:42Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.57
+2025-01-21T05:43:44Z ERR Connection terminated error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0
+2025-01-21T05:43:54Z INF Registered tunnel connection connIndex=0 connection=963309c5-f068-408a-ad12-b6062e54c02e event=0 ip=198.41.192.27 location=fra03 protocol=http2
